@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Profile | BrightPath</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        Bright<span>Path</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="careers.html">Careers</a>
+        <a href="universities.html">Universities</a>
+        <a href="bursaries.html">Bursaries</a>
+    </div>
+
+</nav>
+
+
+<main class="page-container">
+
+    <div class="page-header">
+
+        <div class="badge">
+            STEP 1
+        </div>
+
+        <h1>Build Your Profile</h1>
+
+        <p>
+            Tell us a little about yourself so BrightPath can
+            understand your goals.
+        </p>
+
+    </div>
+
+
+    <div class="form-card">
+
+        <form id="profileForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        First Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="e.g. Ngwako"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="surname">
+                        Surname
+                    </label>
+
+                    <input
+                        type="text"
+                        id="surname"
+                        placeholder="e.g. Ramakgoakgoa"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="grade">
+                        Grade
+                    </label>
+
+                    <select id="grade" required>
+
+                        <option value="">
+                            Select grade
+                        </option>
+
+                        <option value="10">Grade 10</option>
+                        <option value="11">Grade 11</option>
+                        <option value="12">Grade 12</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="province">
+                        Province
+                    </label>
+
+                    <select id="province" required>
+
+                        <option value="">
+                            Select province
+                        </option>
+
+                        <option>Eastern Cape</option>
+                        <option>Free State</option>
+                        <option>Gauteng</option>
+                        <option>KwaZulu-Natal</option>
+                        <option>Limpopo</option>
+                        <option>Mpumalanga</option>
+                        <option>North West</option>
+                        <option>Northern Cape</option>
+                        <option>Western Cape</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="maths">
+                        Mathematics %
+                    </label>
+
+                    <input
+                        type="number"
+                        id="maths"
+                        min="0"
+                        max="100"
+                        placeholder="e.g. 75"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="science">
+                        Physical Sciences %
+                    </label>
+
+                    <input
+                        type="number"
+                        id="science"
+                        min="0"
+                        max="100"
+                        placeholder="e.g. 70"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="english">
+                        English %
+                    </label>
+
+                    <input
+                        type="number"
+                        id="english"
+                        min="0"
+                        max="100"
+                        placeholder="e.g. 72"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="lifeOrientation">
+                        Life Orientation %
+                    </label>
+
+                    <input
+                        type="number"
+                        id="lifeOrientation"
+                        min="0"
+                        max="100"
+                        placeholder="e.g. 80"
+                    >
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label for="interest">
+                        What are you most interested in?
+                    </label>
+
+                    <select id="interest" required>
+
+                        <option value="">
+                            Select an area
+                        </option>
+
+                        <option value="technology">
+                            Technology & Computing
+                        </option>
+
+                        <option value="health">
+                            Health & Medicine
+                        </option>
+
+                        <option value="business">
+                            Business & Entrepreneurship
+                        </option>
+
+                        <option value="engineering">
+                            Engineering
+                        </option>
+
+                        <option value="law">
+                            Law & Social Sciences
+                        </option>
+
+                        <option value="creative">
+                            Arts & Creative Industries
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-actions">
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                    style="border: none; cursor:pointer;"
+                >
+                    Continue →
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</main>
+
+
+<script src="js/profile.js"></script>
+
+</body>
+</html>
