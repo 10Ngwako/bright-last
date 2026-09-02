@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Log In | BrightPath</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Bright<span>Path</span></div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="impact.html">Our Impact</a>
+    </div>
+
+    <div id="navAuth"></div>
+</nav>
+
+
+<main class="page-container">
+
+    <div class="page-header">
+        <div class="badge">WELCOME BACK</div>
+        <h1>Log In</h1>
+        <p>Choose your role and sign in to your BrightPath account.</p>
+    </div>
+
+    <div class="tabs" id="roleTabs">
+        <button class="tab-button" data-role="learner">🎓 Learner</button>
+        <button class="tab-button" data-role="teacher">🧑‍🏫 Teacher</button>
+        <button class="tab-button" data-role="district">🏛️ District</button>
+        <button class="tab-button" data-role="bursary">🏢 Bursary / University</button>
+    </div>
+
+    <div class="form-card" style="max-width:480px; margin:auto;">
+
+        <form id="loginForm">
+
+            <input type="hidden" id="loginRole" value="learner">
+
+            <div class="form-grid" style="grid-template-columns:1fr;">
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+
+            </div>
+
+            <div id="loginError" class="notice" style="display:none; background:#fdeceb; border-color:#f4c7c3; color:#a83a2f;"></div>
+
+            <div class="form-actions">
+                <button type="submit" class="primary-button" style="border:none; cursor:pointer; width:100%;">
+                    Log In →
+                </button>
+            </div>
+
+        </form>
+
+        <p style="margin-top:20px; font-size:13px; color:var(--text); text-align:center;">
+            Don't have an account?
+            <a id="registerLink" href="consent.html?role=learner" style="color:var(--primary); font-weight:700;">
+                Register
+            </a>
+        </p>
+
+    </div>
+
+</main>
+
+
+<script src="js/auth.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>

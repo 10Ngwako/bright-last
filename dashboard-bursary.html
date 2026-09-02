@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bursary / University Dashboard | BrightPath</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Bright<span>Path</span> <small style="color:var(--text); font-weight:600;">BURSARY / UNIVERSITY</small></div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="impact.html">Our Impact</a>
+    </div>
+
+    <div id="navAuth"></div>
+</nav>
+
+
+<main class="page-container">
+
+    <div class="page-header">
+        <div class="badge">VERIFIED PORTFOLIOS</div>
+        <h1>District-Approved Learners</h1>
+        <p>
+            Only learners whose district has approved external access
+            are listed here, and only their teacher-verified achievements are shown.
+        </p>
+    </div>
+
+    <div class="notice" id="emptyNotice" style="display:none;">
+        No district-approved learner portfolios are available yet. Once a district approves a learner for external access, they will appear here.
+    </div>
+
+    <div class="card-grid" id="learnerCards"></div>
+
+</main>
+
+<script src="js/auth.js"></script>
+<script src="js/dashboard-bursary.js"></script>
+
+</body>
+</html>

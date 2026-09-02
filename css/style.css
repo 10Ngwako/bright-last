@@ -732,3 +732,475 @@ footer small {
         grid-column: auto;
     }
 }
+
+
+/* =========================
+   NAV AUTH
+========================= */
+
+#navAuth {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-user {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.nav-ghost {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-ghost:hover {
+    color: var(--primary);
+}
+
+
+/* =========================
+   JOURNEY (learner journey timeline)
+========================= */
+
+.journey {
+    padding: 100px 8%;
+}
+
+.journey-track {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 55px;
+}
+
+.journey-stage {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 30px 25px;
+    position: relative;
+}
+
+.journey-stage .stage-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--light);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.journey-stage h3 {
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.journey-stage p {
+    color: var(--text);
+    font-size: 13px;
+}
+
+.journey-arrow {
+    display: none;
+}
+
+.data-note {
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 35px;
+}
+
+.data-note h3 {
+    margin-bottom: 12px;
+}
+
+.data-note p {
+    color: var(--text);
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.data-note small {
+    color: #999;
+    font-size: 12px;
+}
+
+
+/* =========================
+   ROLE SIGN-IN GRID
+========================= */
+
+.roles {
+    padding: 100px 8%;
+    background: var(--light);
+}
+
+.role-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.role-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 30px 24px;
+    text-align: center;
+}
+
+.role-card .icon {
+    font-size: 34px;
+    margin-bottom: 16px;
+}
+
+.role-card h3 {
+    margin-bottom: 8px;
+}
+
+.role-card p {
+    color: var(--text);
+    font-size: 13px;
+    margin-bottom: 20px;
+    min-height: 55px;
+}
+
+.role-card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* =========================
+   TABS
+========================= */
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 14px 18px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-button.active {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+
+/* =========================
+   CONSENT
+========================= */
+
+.consent-box {
+    max-height: 380px;
+    overflow-y: auto;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 26px;
+    background: var(--light);
+}
+
+.consent-box h4 {
+    margin: 18px 0 6px;
+}
+
+.consent-box h4:first-child {
+    margin-top: 0;
+}
+
+.consent-box p,
+.consent-box li {
+    color: var(--text);
+    font-size: 14px;
+}
+
+.consent-box ul {
+    margin: 6px 0 6px 20px;
+}
+
+.consent-agree {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 22px 0;
+    font-size: 14px;
+}
+
+.consent-agree input {
+    margin-top: 4px;
+}
+
+
+/* =========================
+   STATUS BADGES
+========================= */
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.status-verified,
+.status-matched,
+.status-approved {
+    background: #ecfaf2;
+    color: var(--green);
+}
+
+.status-pending {
+    background: #fff6e0;
+    color: #a97a00;
+}
+
+.status-rejected,
+.status-unmatched {
+    background: #fdeceb;
+    color: #d64545;
+}
+
+
+/* =========================
+   DATA TABLE
+========================= */
+
+.data-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    min-width: 720px;
+}
+
+.data-table th,
+.data-table td {
+    text-align: left;
+    padding: 16px 18px;
+    font-size: 13px;
+    border-bottom: 1px solid var(--border);
+}
+
+.data-table th {
+    background: var(--light);
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text);
+}
+
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+
+.table-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.small-button {
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.small-button:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.small-button.danger:hover {
+    border-color: #d64545;
+    color: #d64545;
+}
+
+.small-button.success:hover {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.small-button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   STAT TILES (impact page)
+========================= */
+
+.stat-tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-tile {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px;
+}
+
+.stat-tile .stat-value {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.stat-tile .stat-label {
+    color: var(--text);
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.goal-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    padding: 26px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.goal-row:last-child {
+    border-bottom: none;
+}
+
+.goal-row h4 {
+    font-size: 15px;
+}
+
+.goal-row p {
+    color: var(--text);
+    font-size: 14px;
+}
+
+
+/* =========================
+   PORTFOLIO / VERIFICATION EXTRAS
+========================= */
+
+.portfolio-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 22px;
+}
+
+.notice {
+    border: 1px solid var(--border);
+    background: var(--light);
+    border-radius: 14px;
+    padding: 18px 22px;
+    font-size: 13px;
+    color: var(--text);
+    margin-bottom: 25px;
+}
+
+.notice strong {
+    color: var(--dark);
+}
+
+
+/* =========================
+   PRINTABLE REFERRAL LETTER
+========================= */
+
+.referral-letter {
+    display: none;
+}
+
+@media print {
+
+    nav,
+    footer,
+    .page-header,
+    .portfolio-actions,
+    .notice,
+    .no-print {
+        display: none !important;
+    }
+
+    .referral-letter {
+        display: block;
+    }
+}
+
+
+/* =========================
+   ROLE PAGES RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .journey-track,
+    .role-grid,
+    .stat-tiles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .goal-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .journey-track,
+    .role-grid,
+    .stat-tiles {
+        grid-template-columns: 1fr;
+    }
+
+    #navAuth {
+        gap: 8px;
+    }
+
+    .nav-user {
+        display: none;
+    }
+}

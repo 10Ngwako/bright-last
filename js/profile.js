@@ -1,6 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    const user = BP.requireRole("learner");
+    if (!user) return;
+
     const form = document.getElementById("profileForm");
+
+    const existing = JSON.parse(localStorage.getItem("brightPathProfile"));
+    if (existing) {
+        document.getElementById("name").value = existing.name || "";
+        document.getElementById("surname").value = existing.surname || "";
+        document.getElementById("grade").value = existing.grade || "";
+        document.getElementById("province").value = existing.province || "";
+        document.getElementById("maths").value = existing.marks?.maths || "";
+        document.getElementById("science").value = existing.marks?.science || "";
+        document.getElementById("english").value = existing.marks?.english || "";
+        document.getElementById("lifeOrientation").value = existing.marks?.lifeOrientation || "";
+        document.getElementById("interest").value = existing.interest || "";
+    }
 
     form.addEventListener("submit", function (event) {
 
@@ -32,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
             JSON.stringify(profile)
         );
 
+        BP.syncLearnerRecord(user);
 
         window.location.href = "potential.html";
 

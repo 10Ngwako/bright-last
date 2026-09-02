@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard | BrightPath</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+    <div class="logo">
+        Bright<span>Path</span>
+        <small> ADMIN</small>
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">
+            Dashboard
+        </a>
+
+        <a href="students.html">
+            Students
+        </a>
+
+        <a href="achievements.html">
+            Achievements
+        </a>
+
+    </div>
+
+    <a
+        href="../index.html"
+        class="nav-button"
+    >
+        Exit Admin
+    </a>
+
+</nav>
+
+
+<main class="dashboard">
+
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <div class="badge">
+                ADMINISTRATION
+            </div>
+
+            <h1>
+                BrightPath Dashboard
+            </h1>
+
+            <p>
+                Monitor student participation and achievements.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="stats-grid">
+
+
+        <div class="stat-card">
+
+            <span>👨‍🎓</span>
+
+            <div>
+
+                <small>
+                    STUDENTS
+                </small>
+
+                <h2 id="studentCount">
+                    0
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>🏆</span>
+
+            <div>
+
+                <small>
+                    ACHIEVEMENTS
+                </small>
+
+                <h2 id="achievementCount">
+                    0
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>🎓</span>
+
+            <div>
+
+                <small>
+                    CAREER PROFILES
+                </small>
+
+                <h2 id="careerCount">
+                    0
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>📈</span>
+
+            <div>
+
+                <small>
+                    THIS YEAR
+                </small>
+
+                <h2 id="yearCount">
+                    0
+                </h2>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="dashboard-grid">
+
+
+        <section class="dashboard-panel">
+
+            <div class="panel-header">
+
+                <h2>
+                    Recent Achievements
+                </h2>
+
+                <a href="achievements.html">
+                    View all →
+                </a>
+
+            </div>
+
+
+            <div id="recentAchievements">
+
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-panel">
+
+            <div class="panel-header">
+
+                <h2>
+                    Achievement Categories
+                </h2>
+
+            </div>
+
+
+            <div id="categoryStats">
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+</main>
+
+
+<script src="../js/admin/dashboard.js"></script>
+
+</body>
+
+</html>

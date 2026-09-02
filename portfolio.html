@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Digital Portfolio | BrightPath</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+    <div class="logo">
+        Bright<span>Path</span>
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="profile.html">Profile</a>
+
+        <a href="achievements.html">
+            Achievements
+        </a>
+
+        <a href="portfolio.html">
+            Portfolio
+        </a>
+
+    </div>
+
+    <div id="navAuth"></div>
+
+</nav>
+
+
+<main class="page-container no-print">
+
+
+    <div class="page-header">
+
+        <div class="badge">
+            MY DIGITAL PORTFOLIO
+        </div>
+
+        <h1 id="studentName">
+            My Portfolio
+        </h1>
+
+        <p>
+            Your academic journey, achievements and verification status
+            in one place.
+        </p>
+
+    </div>
+
+
+    <div class="notice">
+        <strong>How verification works:</strong>
+        achievements you add start as <span class="status-badge status-pending">Pending</span>
+        until your teacher verifies them. Once your district confirms
+        your record and approves it, bursary providers and universities
+        may view your verified achievements.
+    </div>
+
+
+    <div class="result-header">
+
+        <h1 id="portfolioName">
+            Student
+        </h1>
+
+        <p id="portfolioDetails">
+            Student profile
+        </p>
+
+        <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <span class="status-badge" id="matchBadge">District match: pending</span>
+            <span class="status-badge" id="approvalBadge">Bursary/University access: not approved</span>
+        </div>
+
+    </div>
+
+
+    <div class="card-grid">
+
+        <div class="info-card">
+
+            <span class="tag">
+                ACADEMICS
+            </span>
+
+            <h3 id="academicScore">
+                -
+            </h3>
+
+            <p>
+                Academic performance
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span class="tag">
+                ACHIEVEMENTS
+            </span>
+
+            <h3 id="achievementCount">
+                0
+            </h3>
+
+            <p>
+                Verified / total achievements
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span class="tag">
+                INTEREST
+            </span>
+
+            <h3 id="interest">
+                -
+            </h3>
+
+            <p>
+                Main area of interest
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <br><br>
+
+
+    <h2>My Achievements</h2>
+
+    <br>
+
+
+    <div
+        id="portfolioAchievements"
+        class="card-grid"
+    ></div>
+
+
+    <div class="portfolio-actions">
+
+        <a
+            href="achievements.html"
+            class="primary-button"
+        >
+            + Add Achievement
+        </a>
+
+        <button
+            id="downloadBtn"
+            class="secondary-button"
+            style="cursor:pointer;"
+        >
+            ⬇ Download Portfolio (Referral Letter)
+        </button>
+
+    </div>
+
+    <p id="downloadNote" style="font-size:13px; color:var(--text); margin-top:10px;"></p>
+
+
+</main>
+
+
+<!-- Printable referral letter, populated by js/portfolio.js -->
+<div class="referral-letter" id="referralLetter">
+
+    <div style="padding:60px; font-family: Arial, Helvetica, sans-serif; color:#17152b;">
+
+        <h1 style="margin-bottom:0;">BrightPath Verified Referral</h1>
+        <p style="color:#56556a;">Issued via the BrightPath digital portfolio platform</p>
+
+        <hr style="margin:25px 0;">
+
+        <p><strong>Learner:</strong> <span id="letterName"></span></p>
+        <p><strong>Grade:</strong> <span id="letterGrade"></span> &nbsp; <strong>School:</strong> <span id="letterSchool"></span></p>
+        <p><strong>District:</strong> <span id="letterDistrict"></span> &nbsp; <strong>District match status:</strong> <span id="letterMatch"></span></p>
+        <p><strong>Academic average:</strong> <span id="letterAcademic"></span></p>
+        <p><strong>Date issued:</strong> <span id="letterDate"></span></p>
+
+        <h3 style="margin-top:30px;">Verified Achievements</h3>
+        <div id="letterAchievements"></div>
+
+        <p style="margin-top:40px; font-size:13px; color:#56556a;">
+            This referral reflects achievements verified by the
+            learner's teacher(s). District approval status is shown
+            above. This document is generated directly from the
+            learner's BrightPath account and should be confirmed with
+            the issuing district office where required.
+        </p>
+
+        <div style="margin-top:60px; display:flex; gap:60px;">
+            <div>
+                <div style="border-top:1px solid #17152b; width:220px; margin-top:40px;"></div>
+                <small>Principal / School Signature</small>
+            </div>
+            <div>
+                <div style="border-top:1px solid #17152b; width:220px; margin-top:40px;"></div>
+                <small>District Office Signature</small>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="js/auth.js"></script>
+<script src="js/portfolio.js"></script>
+
+</body>
+
+</html>

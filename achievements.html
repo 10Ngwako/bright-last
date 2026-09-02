@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Achievements | BrightPath</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        Bright<span>Path</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="portfolio.html">Portfolio</a>
+    </div>
+
+    <div id="navAuth"></div>
+
+</nav>
+
+
+<main class="page-container">
+
+    <div class="page-header">
+
+        <div class="badge">
+            MY JOURNEY
+        </div>
+
+        <h1>My Achievements</h1>
+
+        <p>
+            Your achievements tell the story of what you can do.
+            Add the things you are proud of.
+        </p>
+
+    </div>
+
+
+    <div class="form-card">
+
+        <h2>Add an Achievement</h2>
+
+        <br>
+
+        <form id="achievementForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label for="title">
+                        Achievement
+                    </label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="e.g. Hackathon Finalist"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="category">
+                        Category
+                    </label>
+
+                    <select id="category" required>
+
+                        <option value="">
+                            Select category
+                        </option>
+
+                        <option value="Academic">
+                            Academic
+                        </option>
+
+                        <option value="Technology">
+                            Technology
+                        </option>
+
+                        <option value="Leadership">
+                            Leadership
+                        </option>
+
+                        <option value="Entrepreneurship">
+                            Entrepreneurship
+                        </option>
+
+                        <option value="Sports">
+                            Sports
+                        </option>
+
+                        <option value="Arts">
+                            Arts & Culture
+                        </option>
+
+                        <option value="Community">
+                            Community & Volunteering
+                        </option>
+
+                        <option value="Certification">
+                            Certification
+                        </option>
+
+                        <option value="Competition">
+                            Competition
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="organisation">
+                        Organisation
+                    </label>
+
+                    <input
+                        type="text"
+                        id="organisation"
+                        placeholder="e.g. Geekulcha"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="year">
+                        Year
+                    </label>
+
+                    <input
+                        type="number"
+                        id="year"
+                        min="2000"
+                        max="2100"
+                        value="2026"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        rows="4"
+                        placeholder="Tell us about this achievement..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label for="evidence">
+                        Evidence / Link (optional)
+                    </label>
+
+                    <input
+                        type="url"
+                        id="evidence"
+                        placeholder="https://..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-actions">
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                    style="border:none; cursor:pointer;"
+                >
+                    Add Achievement
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <br><br>
+
+
+    <div>
+
+        <h2>My Achievements</h2>
+
+        <br>
+
+        <div
+            id="achievementList"
+            class="card-grid"
+        ></div>
+
+    </div>
+
+</main>
+
+
+<script src="js/auth.js"></script>
+<script src="js/achievements.js"></script>
+
+</body>
+
+</html>

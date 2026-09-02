@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    const user = BP.requireRole("learner");
+    if (!user) return;
+
     const profileData =
         localStorage.getItem("brightPathProfile");
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teacher Dashboard | BrightPath</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Bright<span>Path</span> <small style="color:var(--text); font-weight:600;">TEACHER</small></div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="impact.html">Our Impact</a>
+    </div>
+
+    <div id="navAuth"></div>
+</nav>
+
+
+<main class="page-container">
+
+    <div class="page-header">
+        <div class="badge">VERIFICATION</div>
+        <h1>Verify Learner Achievements</h1>
+        <p id="teacherIntro">
+            Review and verify achievements submitted by learners at your school.
+        </p>
+    </div>
+
+    <div class="notice" id="emptyNotice" style="display:none;"></div>
+
+    <div class="data-table-wrap" id="tableWrap">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Learner</th>
+                    <th>School</th>
+                    <th>Achievement</th>
+                    <th>Category</th>
+                    <th>Year</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="achievementRows"></tbody>
+        </table>
+    </div>
+
+</main>
+
+<script src="js/auth.js"></script>
+<script src="js/dashboard-teacher.js"></script>
+
+</body>
+</html>

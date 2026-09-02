@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    const user = BP.requireRole("learner");
+    if (!user) return;
+
     const form = document.getElementById("assessmentForm");
 
     form.addEventListener("submit", function (event) {

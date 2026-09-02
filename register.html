@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | BrightPath</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Bright<span>Path</span></div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="impact.html">Our Impact</a>
+    </div>
+
+    <div id="navAuth"></div>
+</nav>
+
+
+<main class="page-container">
+
+    <div class="page-header">
+        <div class="badge">CREATE YOUR ACCOUNT</div>
+        <h1 id="registerTitle">Register</h1>
+        <p>Registering requires accepting the terms for your role first.</p>
+    </div>
+
+    <div class="notice" id="consentNotice" style="display:none;">
+        You haven't accepted the terms for this role yet.
+        <a href="consent.html">Review consent &amp; terms →</a>
+    </div>
+
+    <div class="form-card" id="registerFormWrap">
+
+        <form id="registerForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="fullName" id="fullNameLabel">Full Name</label>
+                    <input type="text" id="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group" data-field="grade" hidden>
+                    <label for="grade">Grade</label>
+                    <select id="grade">
+                        <option value="11">Grade 11</option>
+                        <option value="12">Grade 12</option>
+                    </select>
+                </div>
+
+                <div class="form-group" data-field="idLast4" hidden>
+                    <label for="idLast4">Last 4 digits of ID number</label>
+                    <input type="text" id="idLast4" maxlength="4" pattern="[0-9]{4}" placeholder="e.g. 0421">
+                </div>
+
+                <div class="form-group" data-field="school">
+                    <label for="org" id="orgLabel">School</label>
+                    <input type="text" id="org" required>
+                </div>
+
+                <div class="form-group" data-field="district">
+                    <label for="district">District</label>
+                    <input type="text" id="district" placeholder="e.g. Vhembe East">
+                </div>
+
+                <div class="form-group" data-field="orgType" hidden>
+                    <label for="orgType">Organisation Type</label>
+                    <select id="orgType">
+                        <option value="Bursary Provider">Bursary Provider</option>
+                        <option value="Employer">Employer</option>
+                        <option value="University">University</option>
+                        <option value="College">College / TVET</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" minlength="6" required>
+                </div>
+
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="primary-button" style="border:none; cursor:pointer;">
+                    Create Account →
+                </button>
+            </div>
+
+        </form>
+
+        <p style="margin-top:20px; font-size:13px; color:var(--text);">
+            Already have an account?
+            <a href="login.html" style="color:var(--primary); font-weight:700;">Log in</a>
+        </p>
+
+    </div>
+
+</main>
+
+
+<script src="js/auth.js"></script>
+<script src="js/register.js"></script>
+
+</body>
+</html>
